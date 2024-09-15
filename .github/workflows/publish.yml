@@ -2,7 +2,7 @@ name: Publish to NPM
 on:
   push:
     branches:
-      - master
+      - main
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -27,5 +27,5 @@ jobs:
         run: pnpm run build
       - uses: JS-DevTools/npm-publish@v3
         with:
-          token: ${{ secrets.NPM_PUBLISH_REACT }}
+          token: ${{ secrets.NPM_UI_REACT }}
           access: 'public'
