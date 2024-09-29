@@ -1,6 +1,6 @@
 import { Meta, StoryObj } from '@storybook/react'
 
-import { Card } from './card'
+import { Card } from './'
 
 // Описание метаданных для Storybook
 const meta: Meta<typeof Card> = {
