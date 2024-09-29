@@ -31,7 +31,7 @@ export type InputProps = {
 } & ComponentPropsWithoutRef<'input'>
 
 export const Input = (props: InputProps) => {
-  const { className, fullWidth, type = 'checkbox', variant = 'default', ...rest } = props
+  const { className, fullWidth, type = 'text', variant = 'default', ...rest } = props
 
   const classNames = clsx(s.input, s[variant], fullWidth && s.fullWidth, className)
 
