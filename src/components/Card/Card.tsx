@@ -2,7 +2,7 @@ import { ComponentPropsWithoutRef, ElementType } from 'react'
 
 import { clsx } from 'clsx'
 
-import s from './Card.module.scss'
+import s from './card.module.scss'
 
 import cardImage from '../../assets/images.jpg'
 
