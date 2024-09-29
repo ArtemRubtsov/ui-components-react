@@ -6,7 +6,7 @@ import { Card } from './'
 const meta: Meta<typeof Card> = {
   argTypes: {
     as: {
-      control: 'select', // Контрол выбора компонента (select)
+      control: 'radio', // Контрол выбора компонента (select)
       options: ['article', 'div', 'section'], // Опции для выбора динамического компонента
     },
     bgColors: {
