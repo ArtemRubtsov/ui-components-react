@@ -1,0 +1,19 @@
+.avatar {
+    display: inline-block;
+    overflow: hidden; 
+  }
+  
+  .default {
+    border-radius: 0;
+  }
+  
+  .circle {
+    border-radius: 50%; 
+  }
+  
+  img {
+    display: block; 
+    width: 100%;
+    height: auto; 
+  }
+  

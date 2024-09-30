@@ -4,7 +4,7 @@ import { Avatar } from './'
 
 const meta = {
   argTypes: {
-    variant: {
+    type: {
       control: { type: 'radio' },
       options: ['default', 'circle'],
     },
@@ -19,6 +19,9 @@ type story = StoryObj<typeof meta>
 
 export const Default: story = {
   args: {
-    variant: 'default',
+    alt: 'default',
+    borderRadius: '3px',
+    src: '',
+    type: 'default',
   },
 }
