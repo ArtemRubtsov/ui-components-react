@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/react'
 
 import { Card } from './'
 
-const meta: Meta<typeof Card> = {
+const meta = {
   argTypes: {
     customType: {
       control: { type: 'radio' },
@@ -12,7 +12,7 @@ const meta: Meta<typeof Card> = {
   component: Card,
   tags: ['autodocs'],
   title: 'Components/Card',
-}
+} satisfies Meta<typeof Card>
 
 export default meta
 
