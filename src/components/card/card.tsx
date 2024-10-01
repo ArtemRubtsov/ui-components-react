@@ -16,7 +16,6 @@ export const Card = ({ className, customType, ...props }: Props) => {
     <div className={cardClass} {...props}>
       {customType === 'string' && <p>This is a string type</p>}
       {customType === 'number' && <p>This is a number type</p>}
-      {customType === 'boolean' && <p>This is a boolean type</p>}
     </div>
   )
 }
