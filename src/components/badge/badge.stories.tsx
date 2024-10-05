@@ -1,11 +1,11 @@
 import { Meta, StoryObj } from '@storybook/react'
 
-import { Badge, BadgeVariant } from './badge' // Убедитесь, что вы импортируете BadgeVariant
+import { Badge, BadgeVariant } from './badge'
 
 const meta: Meta<typeof Badge> = {
   argTypes: {
     variant: {
-      control: { options: BadgeVariant, type: 'select' }, // Используем 'select' с вариантами
+      control: { options: BadgeVariant, type: 'select' },
     },
   },
   component: Badge,
@@ -33,7 +33,7 @@ export const Progress: Story = {
 
 export const Review: Story = {
   args: {
-    title: 'Under Review',
+    title: 'Review',
     variant: 'Review',
   },
 }
