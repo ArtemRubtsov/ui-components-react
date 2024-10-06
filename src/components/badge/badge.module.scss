@@ -10,7 +10,7 @@
 .badge-progress {
     background-color: #fb6a0025; 
     color: #ffa057;
-    font-size: 12px;
+    font-size: 14px;
     font-family: bold;
     padding: 5px 5px;
     border-radius: 3px;
@@ -19,8 +19,57 @@
 .badge-review {
     background-color: #0077ff3a;
     color: #70b8ff;
-    font-size: 12px;
+    font-size: 14px;
     font-family: bold;
     padding: 5px 5px;
     border-radius: 3px; 
+}
+.badge-check{
+    background-color: #e6fffb;
+    color: #0ca2c1;
+    font-size: 14px;
+    font-family: bold;
+    padding: 5px 5px;
+    border-radius: 3px;
+}
+.badge-danger{
+    background-color: #fff1f0;
+    color: #f5222d;
+    font-size: 14px;
+    font-family: bold;
+    padding: 5px 5px;
+    border-radius: 3px;
+}
+.badge-refactoring{
+    background-color: #f759ab;
+    color: #fff0f6;
+    font-size: 14px;
+    font-family: bold;
+    padding: 5px 5px;
+    border-radius: 3px;
+}
+.badge-test{
+    background-color: #f9f0ff;
+    color: #9254de;
+    font-size: 14px;
+    font-family: bold;
+    padding: 5px 5px;
+    border-radius: 3px;
+}
+.badge-warning{
+    background-color: #fffbe6;
+    color: #faad14;
+    font-size: 14px;
+    font-family: bold;
+    padding: 5px 5px;
+    border-radius: 3px;
+}
+.badge-clossed{
+    background-color: #fff2e8;
+    color: #fa541c;
+    text-decoration: line-through;
+    font-size: 14px;
+    font-family: bold;
+    padding: 5px 5px;
+    border-radius: 3px;
 }

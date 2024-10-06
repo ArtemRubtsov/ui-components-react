@@ -37,3 +37,45 @@ export const Review: Story = {
     variant: 'Review',
   },
 }
+
+export const Check: Story = {
+  args: {
+    title: 'Check task',
+    variant: 'Check',
+  },
+}
+
+export const Danger: Story = {
+  args: {
+    title: 'Status danger',
+    variant: 'Danger',
+  },
+}
+
+export const Refactoring: Story = {
+  args: {
+    title: 'Refactoring',
+    variant: 'Refactoring',
+  },
+}
+
+export const Test: Story = {
+  args: {
+    title: 'Run test',
+    variant: 'Test',
+  },
+}
+
+export const Warning: Story = {
+  args: {
+    title: 'Warning',
+    variant: 'Warning',
+  },
+}
+
+export const Clossed: Story = {
+  args: {
+    title: 'Clossed',
+    variant: 'Clossed',
+  },
+}
