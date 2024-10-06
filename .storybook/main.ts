@@ -18,9 +18,14 @@ const config: StorybookConfig = {
   viteFinal: (config) => {
     config.build = config.build || {};
     config.build.sourcemap = false;
-    config.base = '/ui-components-react/'; // Установи базовый путь для статических файлов
+    config.base = '/ui-components-react/'; 
+    config.publicDir = '../public';
     return config;
-  },  
+  },
+  typescript: {
+    check: true, 
+    reactDocgen: 'react-docgen-typescript', 
+  },
 }
 export default config
 
