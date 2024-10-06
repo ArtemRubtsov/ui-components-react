@@ -15,11 +15,12 @@ const config: StorybookConfig = {
   docs: {
     autodocs: true,
   },
-  viteFinal: config => {
-    config.build = config.build || {}
-    config.build.sourcemap = false
-    return config
-  },
+  viteFinal: (config) => {
+    config.build = config.build || {};
+    config.build.sourcemap = false;
+    config.base = '/ui-components-react/'; // Установи базовый путь для статических файлов
+    return config;
+  },  
 }
 export default config
 
