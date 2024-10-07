@@ -33,7 +33,6 @@ export const Badge = <T extends ElementType = 'span'>({
   const Component = as || 'span'
 
   const className = variant ? `${s[`badge-${variant.toLowerCase()}`]}` : ''
-  // const style = clsx(variant ? `${s[`badge-${variant.toLowerCase()}`]}` : '')
 
   return (
     <Component className={className} {...rest}>
