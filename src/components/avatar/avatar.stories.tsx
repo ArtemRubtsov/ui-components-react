@@ -4,6 +4,10 @@ import { Avatar } from './'
 
 const meta = {
   argTypes: {
+    src: {
+      control: 'text',
+      description: 'URL of  the image',
+    },
     type: {
       control: { type: 'radio' },
       options: ['default', 'circle'],
@@ -21,7 +25,7 @@ export const Default: story = {
   args: {
     alt: 'default',
     borderRadius: '3px',
-    src: '',
+    src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4ACm_TQdcAeevcSrggAAGAlW86M2-HgNzAw&s',
     type: 'default',
   },
 }
