@@ -1,7 +1,5 @@
 import { ElementType } from 'react'
 
-import clsx from 'clsx'
-
 import s from './badge.module.scss'
 
 export const BadgeVariant = [
