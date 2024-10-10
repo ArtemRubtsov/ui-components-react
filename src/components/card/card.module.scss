@@ -1,8 +1,16 @@
 .card {
-    background-color: #f4f4f4;
+    max-width: 360px;
+    background-color: #edeef0;
     border-radius: 8px;
     padding: 16px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    img{
+      object-fit: cover;
+      width: 100%;
+      height: 140px;
+      background-color: #696e77;
+      border-radius: 3px;
+    }
   }
   
   .customClass {
