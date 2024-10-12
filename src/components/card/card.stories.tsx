@@ -7,10 +7,13 @@ const meta = {
   argTypes: {
     size: {
       control: { type: 'radio' },
+      description: 'size  of the card',
+
       options: ['xxs', 'xs', 's', 'm', 'l'],
     },
     variant: {
       control: { type: 'radio' },
+      description: 'variant of the  card',
       options: ['default', 'second', 'third'],
     },
   },
@@ -38,8 +41,50 @@ export const Default: Story = {
         <div>Card content</div>
       </>
     ),
-    size: 'l',
+    size: 'xxs',
     variant: 'default',
+  },
+  render: args => <Card {...args} />,
+}
+
+export const Second: Story = {
+  args: {
+    children: (
+      <>
+        <Avatar
+          alt={''}
+          src={
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4ACm_TQdcAeevcSrggAAGAlW86M2-HgNzAw&s'
+          }
+          type={'default'}
+          variantType={'s'}
+        />
+        <div>Card content</div>
+      </>
+    ),
+    size: 'xs',
+    variant: 'second',
+  },
+  render: args => <Card {...args} />,
+}
+
+export const Third: Story = {
+  args: {
+    children: (
+      <>
+        <Avatar
+          alt={''}
+          src={
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4ACm_TQdcAeevcSrggAAGAlW86M2-HgNzAw&s'
+          }
+          type={'default'}
+          variantType={'s'}
+        />
+        <div>Card content</div>
+      </>
+    ),
+    size: 's',
+    variant: 'third',
   },
   render: args => <Card {...args} />,
 }
