@@ -1,30 +1,32 @@
 .card {
-    max-width: 360px;
-    background-color: #edeef0;
-    border-radius: 8px;
-    padding: 16px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    img{
-      object-fit: cover;
-      width: 100%;
-      height: 140px;
-      background-color: #696e77;
-      border-radius: 3px;
-    }
-  }
-  
-  .customClass {
-    border: 1px solid #ccc;
-    color: #333;
-  }
-  
-  .primary {
-    background-color: #007bff;
-    color: white;
-  }
-  
-  .secondary {
-    background-color: #6c757d;
-    color: white;
-  }
-  
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  background-color: #d8f4f609;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.xxs{
+  padding: 12px;
+}
+.xs{
+  padding: 16px;
+}
+.s{
+  padding: 24px;
+}
+.m{
+  padding: 32px;
+}
+.l{
+  padding: 40px;
+}
+.default{
+  background-color: #d8f4f609;
+}
+.second{
+  background-color: #cce5ff09;
+}
+.third{
+  background-color: #ffd8e809;
+}

@@ -1,16 +1,17 @@
 import { Meta, StoryObj } from '@storybook/react'
 
+import { Avatar } from '../avatar'
 import { Card } from './'
 
 const meta = {
   argTypes: {
-    customType: {
+    size: {
       control: { type: 'radio' },
-      options: ['string', 'number', 'boolean'],
+      options: ['xxs', 'xs', 's', 'm', 'l'],
     },
-    src: {
-      control: { type: 'text' },
-      description: 'src',
+    variant: {
+      control: { type: 'radio' },
+      options: ['default', 'second', 'third'],
     },
   },
   component: Card,
@@ -24,7 +25,21 @@ type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
   args: {
-    customType: 'string',
-    src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4ACm_TQdcAeevcSrggAAGAlW86M2-HgNzAw&s',
+    children: (
+      <>
+        <Avatar
+          alt={''}
+          src={
+            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4ACm_TQdcAeevcSrggAAGAlW86M2-HgNzAw&s'
+          }
+          type={'default'}
+          variantType={'s'}
+        />
+        <div>Card content</div>
+      </>
+    ),
+    size: 'l',
+    variant: 'default',
   },
+  render: args => <Card {...args} />,
 }
