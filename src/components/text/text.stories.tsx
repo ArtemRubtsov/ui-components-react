@@ -85,31 +85,31 @@ export const Size = {
   },
   render: () => (
     <>
-      <Text align={'center'} size={'xxs'}>
+      <Text align={'center'} as={'div'} size={'xxs'}>
         xxs
       </Text>
-      <Text align={'center'} size={'xs'}>
+      <Text align={'center'} as={'div'} size={'xs'}>
         xs
       </Text>
-      <Text align={'center'} size={'s'}>
+      <Text align={'center'} as={'div'} size={'s'}>
         s
       </Text>
-      <Text align={'center'} size={'m'}>
+      <Text align={'center'} as={'div'} size={'m'}>
         m
       </Text>
-      <Text align={'center'} size={'l'}>
+      <Text align={'center'} as={'div'} size={'l'}>
         l
       </Text>
-      <Text align={'center'} size={'xl'}>
+      <Text align={'center'} as={'div'} size={'xl'}>
         xl
       </Text>
-      <Text align={'center'} size={'xxl'}>
+      <Text align={'center'} as={'div'} size={'xxl'}>
         xxl
       </Text>
-      <Text align={'center'} size={'xxxl'}>
+      <Text align={'center'} as={'div'} size={'xxxl'}>
         xxl
       </Text>
-      <Text align={'center'} size={'x-xl'}>
+      <Text align={'center'} as={'div'} size={'x-xl'}>
         x-xl
       </Text>
     </>
