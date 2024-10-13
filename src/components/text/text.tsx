@@ -9,7 +9,7 @@ export const Variant = ['l', 'm', 's', 'x-xl', 'xl', 'xs', 'xxl', 'xxs', 'xxxl']
 export type VariantSize = (typeof Variant)[number]
 
 export type Props<T extends ElementType = 'div' | 'label' | 'p' | 'span'> = {
-  align: 'center' | 'left' | 'right'
+  align?: 'center' | 'left' | 'right'
   as?: T
   children?: ReactNode
   className?: string
@@ -22,6 +22,7 @@ export type Props<T extends ElementType = 'div' | 'label' | 'p' | 'span'> = {
 
 export const Text = <T extends ElementType = 'span'>(props: Props<T>) => {
   const {
+    align = 'left',
     as: Component = 'span',
     children,
     className,
@@ -34,7 +35,7 @@ export const Text = <T extends ElementType = 'span'>(props: Props<T>) => {
   } = props
 
   return (
-    <Component className={clsx(s.text, s[size], s[weight], className)} {...rest}>
+    <Component className={clsx(s.text, s[size], s[weight], s[align], className)} {...rest}>
       {children}
     </Component>
   )
