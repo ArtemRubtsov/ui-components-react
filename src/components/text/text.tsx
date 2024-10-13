@@ -4,7 +4,7 @@ import clsx from 'clsx'
 
 import s from './text.module.scss'
 
-export type Props<T extends ElementType = 'span'> = {
+export type Props<T extends ElementType = 'div' | 'label' | 'p' | 'span'> = {
   align: 'center' | 'left' | 'right'
   as?: T
   children?: ReactNode
