@@ -4,11 +4,11 @@ import clsx from 'clsx'
 
 import s from './text.module.scss'
 
-export const Variant = ['l', 'm', 's', 'x-xl', 'xl', 'xs', 'xxl', 'xxs', 'xxxl'] as const
+export const VariantText = ['l', 'm', 's', 'x-xl', 'xl', 'xs', 'xxl', 'xxs', 'xxxl'] as const
 
-export type VariantSize = (typeof Variant)[number]
+export type VariantSize = (typeof VariantText)[number]
 
-export type Props<T extends ElementType = 'div' | 'label' | 'p' | 'span'> = {
+export type TextProps<T extends ElementType = 'div' | 'label' | 'p' | 'span'> = {
   align?: 'center' | 'left' | 'right'
   as?: T
   children?: ReactNode
@@ -18,7 +18,7 @@ export type Props<T extends ElementType = 'div' | 'label' | 'p' | 'span'> = {
   wrap?: 'balance' | 'nowrap' | 'pretty' | 'wrap'
 } & ComponentPropsWithoutRef<T>
 
-export const Text = <T extends ElementType = 'span'>(props: Props<T>) => {
+export const Text = <T extends ElementType = 'span'>(props: TextProps<T>) => {
   const {
     align = 'left',
     as: Component = 'span',
