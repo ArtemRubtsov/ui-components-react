@@ -7,8 +7,8 @@ import s from './text.module.scss'
 export type Props<T extends ElementType = 'span'> = {
   align: 'center' | 'left' | 'right'
   as?: T
-  children: ReactNode
-  className: string
+  children?: ReactNode
+  className?: string
   color?: ''
   size?: '12' | '14' | '16' | '18' | '20' | '24' | '28' | '32' | '60'
   trim?: 'both' | 'end' | 'normal' | 'start'
