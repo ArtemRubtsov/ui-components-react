@@ -10,7 +10,7 @@ export type Props<T extends ElementType = 'div' | 'label' | 'p' | 'span'> = {
   children?: ReactNode
   className?: string
   color?: ''
-  size?: '12' | '14' | '16' | '18' | '20' | '24' | '28' | '32' | '60'
+  size?: 'l' | 'm' | 's' | 'x-xl' | 'xl' | 'xs' | 'xxl' | 'xxs' | 'xxxl'
   trim?: 'both' | 'end' | 'normal' | 'start'
   weight?: 'bold' | 'light' | 'medium' | 'regular'
   wrap?: 'balance' | 'nowrap' | 'pretty' | 'wrap'
