@@ -15,7 +15,7 @@ export const Box = <T extends ElementType = 'div'>(props: BoxProps<T>) => {
   const { as: Component = 'div', children, className, display = 'block', ...rest } = props
 
   return (
-    <Component className={clsx(s[display])} {...rest}>
+    <Component className={clsx(s[display], className)} {...rest}>
       {children}
     </Component>
   )
