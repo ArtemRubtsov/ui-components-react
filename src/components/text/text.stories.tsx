@@ -49,7 +49,7 @@ export const ElementVariants = {
 
 export const ElementP: Story = {
   render: args => (
-    <Text as={'p'} {...args}>
+    <Text as={'p'} weight={'bold'} {...args}>
       This is a p element
     </Text>
   ),
@@ -57,7 +57,7 @@ export const ElementP: Story = {
 
 export const ElementSpan: Story = {
   render: args => (
-    <Text as={'span'} {...args}>
+    <Text as={'span'} weight={'regular'} {...args}>
       This is a span element
     </Text>
   ),
@@ -65,7 +65,7 @@ export const ElementSpan: Story = {
 
 export const ElementDiv: Story = {
   render: args => (
-    <Text as={'div'} {...args}>
+    <Text as={'div'} weight={'medium'} {...args}>
       This is a div element
     </Text>
   ),
@@ -73,7 +73,7 @@ export const ElementDiv: Story = {
 
 export const ElementLabel: Story = {
   render: args => (
-    <Text as={'label'} {...args}>
+    <Text as={'label'} weight={'light'} {...args}>
       This is a label element
     </Text>
   ),

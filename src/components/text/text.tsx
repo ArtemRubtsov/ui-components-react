@@ -28,13 +28,13 @@ export const Text = <T extends ElementType = 'span'>(props: Props<T>) => {
     color,
     size = 'm',
     trim,
-    weight,
+    weight = 'regular',
     wrap,
     ...rest
   } = props
 
   return (
-    <Component className={clsx(s.text, s[size], className)} {...rest}>
+    <Component className={clsx(s.text, s[size], s[weight], className)} {...rest}>
       {children}
     </Component>
   )

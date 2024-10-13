@@ -1,5 +1,6 @@
 .text{
-    font-family: 'Courier New', Courier, monospace;
+    font-family:  Arial, sans-serif;
+
 }
 .xxs{
     font-size: 12px;
@@ -27,4 +28,17 @@
 }
 .x-xl{
     font-size: 60px;
+}
+
+.light{
+    font-weight: 100;
+}
+.regular{
+    font-weight: 400;
+}
+.medium{
+    font-weight: 500;
+}
+.bold{
+    font-weight: 700;
 }
