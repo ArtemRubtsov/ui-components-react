@@ -30,7 +30,7 @@ export const Text = <T extends ElementType = 'span'>(props: Props<T>) => {
   } = props
 
   return (
-    <Component className={clsx(s.text)} {...rest}>
+    <Component className={clsx(s.text, s[size])} {...rest}>
       {children}
     </Component>
   )

@@ -25,8 +25,6 @@ export default meta
 
 type Story = StoryObj<typeof Text>
 
-export const Empty: Story = {}
-
 export const ElementVariants = {
   parameters: {
     group: 'ElementType',
@@ -78,5 +76,42 @@ export const ElementLabel: Story = {
     <Text as={'label'} {...args}>
       This is a label element
     </Text>
+  ),
+}
+
+export const Size = {
+  parameters: {
+    group: 'Size',
+  },
+  render: () => (
+    <>
+      <Text align={'center'} size={'xxs'}>
+        xxs
+      </Text>
+      <Text align={'center'} size={'xs'}>
+        xs
+      </Text>
+      <Text align={'center'} size={'s'}>
+        s
+      </Text>
+      <Text align={'center'} size={'m'}>
+        m
+      </Text>
+      <Text align={'center'} size={'l'}>
+        l
+      </Text>
+      <Text align={'center'} size={'xl'}>
+        xl
+      </Text>
+      <Text align={'center'} size={'xxl'}>
+        xxl
+      </Text>
+      <Text align={'center'} size={'xxxl'}>
+        xxl
+      </Text>
+      <Text align={'center'} size={'x-xl'}>
+        x-xl
+      </Text>
+    </>
   ),
 }
