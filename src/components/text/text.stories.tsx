@@ -49,7 +49,7 @@ export const ElementVariants = {
 
 export const ElementP: Story = {
   render: args => (
-    <Text align={'center'} as={'p'} weight={'bold'} {...args}>
+    <Text align={'center'} as={'p'} weight={'bold'} wrap={'balance'} {...args}>
       This is a p element
     </Text>
   ),
@@ -57,7 +57,7 @@ export const ElementP: Story = {
 
 export const ElementSpan: Story = {
   render: args => (
-    <Text align={'center'} as={'span'} weight={'regular'} {...args}>
+    <Text align={'center'} as={'span'} weight={'regular'} wrap={'balance'} {...args}>
       This is a span element
     </Text>
   ),
@@ -65,7 +65,7 @@ export const ElementSpan: Story = {
 
 export const ElementDiv: Story = {
   render: args => (
-    <Text align={'left'} as={'div'} weight={'medium'} {...args}>
+    <Text align={'left'} as={'div'} weight={'medium'} wrap={'balance'} {...args}>
       This is a div element
     </Text>
   ),
@@ -73,7 +73,7 @@ export const ElementDiv: Story = {
 
 export const ElementLabel: Story = {
   render: args => (
-    <Text align={'right'} as={'label'} weight={'light'} {...args}>
+    <Text align={'right'} as={'label'} weight={'light'} wrap={'balance'} {...args}>
       This is a label element
     </Text>
   ),

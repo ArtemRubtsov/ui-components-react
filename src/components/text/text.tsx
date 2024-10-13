@@ -13,9 +13,7 @@ export type Props<T extends ElementType = 'div' | 'label' | 'p' | 'span'> = {
   as?: T
   children?: ReactNode
   className?: string
-  color?: ''
   size?: VariantSize
-  trim?: 'both' | 'end' | 'normal' | 'start'
   weight?: 'bold' | 'light' | 'medium' | 'regular'
   wrap?: 'balance' | 'nowrap' | 'pretty' | 'wrap'
 } & ComponentPropsWithoutRef<T>
@@ -26,16 +24,14 @@ export const Text = <T extends ElementType = 'span'>(props: Props<T>) => {
     as: Component = 'span',
     children,
     className,
-    color,
     size = 'm',
-    trim,
     weight = 'regular',
-    wrap,
+    wrap = 'balance',
     ...rest
   } = props
 
   return (
-    <Component className={clsx(s.text, s[size], s[weight], s[align], className)} {...rest}>
+    <Component className={clsx(s.text, s[size], s[weight], s[align], s[wrap], className)} {...rest}>
       {children}
     </Component>
   )

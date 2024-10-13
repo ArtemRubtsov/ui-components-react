@@ -1,6 +1,5 @@
 .text{
     font-family:  Arial, sans-serif;
-
 }
 .xxs{
     font-size: 12px;
@@ -50,4 +49,13 @@
 }
 .center{
     text-align: center;
+}
+.balance{
+    text-wrap:  balance;
+}
+.nowrap{
+    white-space: nowrap;
+}
+.pretty{
+    white-space: pre-wrap;
 }
