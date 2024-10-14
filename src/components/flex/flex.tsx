@@ -19,10 +19,36 @@ export type FlexProps<T extends ElementType = 'div' | 'span'> = {
 }
 
 export const Flex = <T extends ElementType = 'div'>(props: FlexProps<T>) => {
-  const { as: Component = 'div', children, className, display = 'flex', ...rest } = props
+  const {
+    align = 'center',
+    as: Component = 'div',
+    children,
+    className,
+    direction = 'column',
+    display = 'flex',
+    gap = 'g-s',
+    gapX = 'gx-s',
+    gapY = 'gy-s',
+    justify = 'between',
+    wrap = 'wrap',
+    ...rest
+  } = props
 
   return (
-    <Component className={clsx(s[display], className)} {...rest}>
+    <Component
+      className={clsx(
+        s[display],
+        s[direction],
+        s[gap],
+        s[wrap],
+        s[justify],
+        s[align],
+        s[gapX],
+        s[gapY],
+        className
+      )}
+      {...rest}
+    >
       {children}
     </Component>
   )
