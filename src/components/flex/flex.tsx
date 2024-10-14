@@ -4,8 +4,8 @@ import clsx from 'clsx'
 
 import s from './flex.module.scss'
 
-type FlexProps<T extends ElementType = 'div' | 'span'> = {
-  align: 'align-baseline' | 'align-center' | 'align-end' | 'align-start' | 'align-stretch'
+export type FlexProps<T extends ElementType = 'div' | 'span'> = {
+  align?: 'align-baseline' | 'align-center' | 'align-end' | 'align-start' | 'align-stretch'
   as?: T
   children?: React.ReactNode
   className?: string
