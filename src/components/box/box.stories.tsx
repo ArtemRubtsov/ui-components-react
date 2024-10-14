@@ -19,23 +19,30 @@ export const Display = {
   render: () => (
     <>
       <Box as={'div'} display={'block'}>
-        block
+        <div style={{ backgroundColor: 'black', height: '64px', width: '64px' }}></div>
       </Box>
       <Box as={'span'} display={'inline-block'}>
-        inline-block
+        <div style={{ backgroundColor: 'green', height: '64px', width: '64px' }}></div>
       </Box>
       <Box as={'div'} display={'inline'}>
-        inline
+        <div style={{ backgroundColor: 'yellow', height: '64px', width: '64px' }}></div>
       </Box>
     </>
   ),
 }
 
-export const DisplayBox: story = {
+export const DisplayBlock: story = {
   args: {
     children: 'block',
     display: 'block',
   },
+  render: () => (
+    <>
+      <Box as={'div'}>
+        <div style={{ backgroundColor: 'black', height: '64px', width: '64px' }}></div>
+      </Box>
+    </>
+  ),
 }
 export const DisplayInlineBox: story = {
   args: {
@@ -44,7 +51,7 @@ export const DisplayInlineBox: story = {
   render: () => (
     <>
       <Box as={'div'} display={'block'}>
-        Inline-block
+        <div style={{ backgroundColor: 'black', height: '64px', width: '64px' }}></div>
       </Box>
     </>
   ),
@@ -54,4 +61,11 @@ export const DisplayInline: story = {
     children: 'inline',
     display: 'inline',
   },
+  render: () => (
+    <>
+      <Box as={'div'} display={'inline'}>
+        <div style={{ backgroundColor: 'black', height: '64px', width: '64px' }}></div>
+      </Box>
+    </>
+  ),
 }
