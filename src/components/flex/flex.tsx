@@ -1,4 +1,4 @@
-import React, { ElementType } from 'react'
+import React, { ComponentPropsWithoutRef, ElementType } from 'react'
 
 import clsx from 'clsx'
 
@@ -16,7 +16,7 @@ export type FlexProps<T extends ElementType = 'div' | 'span'> = {
   gapY?: 'gy-l' | 'gy-m' | 'gy-s' | 'gy-x-xl' | 'gy-xl' | 'gy-xs' | 'gy-xxl' | 'gy-xxs' | 'gy-xxxl'
   justify?: 'between' | 'center' | 'end' | 'space-around' | 'space-evenly' | 'start'
   wrap?: 'nowrap' | 'wrap' | 'wrap-reverse'
-}
+} & ComponentPropsWithoutRef<T>
 
 export const Flex = <T extends ElementType = 'div'>(props: FlexProps<T>) => {
   const {
