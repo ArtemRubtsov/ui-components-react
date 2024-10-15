@@ -24,6 +24,7 @@ Import and use the components in your React application:
 
 ```tsx
 import { Avatar } from '@rubtsov/ui-components-react';
+import '@rubtsov/ui-components-react/dist/style.css'
 
 const App = () => (
   <div>
