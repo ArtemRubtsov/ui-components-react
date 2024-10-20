@@ -14,7 +14,7 @@ export type FlexProps<T extends ElementType = 'div' | 'span'> = {
   gap?: 'g-l' | 'g-m' | 'g-s' | 'g-x-xl' | 'g-xl' | 'g-xs' | 'g-xxl' | 'g-xxs' | 'g-xxxl'
   gapX?: 'gx-l' | 'gx-m' | 'gx-s' | 'gx-x-xl' | 'gx-xl' | 'gx-xs' | 'gx-xxl' | 'gx-xxs' | 'gx-xxxl'
   gapY?: 'gy-l' | 'gy-m' | 'gy-s' | 'gy-x-xl' | 'gy-xl' | 'gy-xs' | 'gy-xxl' | 'gy-xxs' | 'gy-xxxl'
-  justify?: 'between' | 'center' | 'end' | 'space-around' | 'space-evenly' | 'start'
+  justify?: 'center' | 'end' | 'space-around' | 'space-between' | 'space-evenly' | 'start'
   wrap?: 'nowrap' | 'wrap' | 'wrap-reverse'
 } & ComponentPropsWithoutRef<T>
 
