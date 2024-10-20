@@ -20,62 +20,62 @@ type Story = StoryObj<typeof Badge>
 export const Complete: Story = {
   args: {
     title: 'Complete',
-    variant: 'Complete',
+    variant: 'complete',
   },
 }
 
 export const Progress: Story = {
   args: {
     title: 'In Progress',
-    variant: 'Progress',
+    variant: 'progress',
   },
 }
 
 export const Review: Story = {
   args: {
     title: 'Review',
-    variant: 'Review',
+    variant: 'review',
   },
 }
 
 export const Check: Story = {
   args: {
     title: 'Check task',
-    variant: 'Check',
+    variant: 'check',
   },
 }
 
 export const Danger: Story = {
   args: {
     title: 'Status danger',
-    variant: 'Danger',
+    variant: 'danger',
   },
 }
 
 export const Refactoring: Story = {
   args: {
     title: 'Refactoring',
-    variant: 'Refactoring',
+    variant: 'refactoring',
   },
 }
 
 export const Test: Story = {
   args: {
     title: 'Run test',
-    variant: 'Test',
+    variant: 'test',
   },
 }
 
 export const Warning: Story = {
   args: {
-    title: 'Warning',
-    variant: 'Warning',
+    title: 'warning',
+    variant: 'warning',
   },
 }
 
 export const Clossed: Story = {
   args: {
-    title: 'Clossed',
-    variant: 'Clossed',
+    title: 'Closed',
+    variant: 'closed',
   },
 }
