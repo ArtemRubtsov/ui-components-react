@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { Avatar, Variant } from './'
+import { Avatar, VariantAvatar } from './'
 
 const meta = {
   argTypes: {
@@ -25,7 +25,7 @@ const meta = {
     variantType: {
       control: { type: 'select' },
       description: 'Size of the avatar',
-      options: Variant,
+      options: VariantAvatar,
     },
   },
   component: Avatar,

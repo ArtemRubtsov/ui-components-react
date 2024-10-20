@@ -5,9 +5,9 @@ import clsx from 'clsx'
 import s from './avatar.module.scss'
 
 export const imgType = ['default', 'circle'] as const
-export const Variant = ['xxs', 'xs', 's', 'm', 'l', 'xl', 'xxl', 'xxxl'] as const
+export const VariantAvatar = ['xxs', 'xs', 's', 'm', 'l', 'xl', 'xxl', 'xxxl'] as const
 
-export type VariantType = (typeof Variant)[number]
+export type VariantType = (typeof VariantAvatar)[number]
 
 export type TypeImg = (typeof imgType)[number]
 
@@ -16,7 +16,7 @@ type CustomSize = {
   width?: string
 }
 
-export type Props = {
+export type AvatarProps = {
   align?: 'align-baseline' | 'align-center' | 'align-end' | 'align-start' | 'align-stretch'
   alt?: string
   className?: string
@@ -38,7 +38,7 @@ export const Avatar = ({
   type,
   variantType,
   ...rest
-}: Props) => {
+}: AvatarProps) => {
   return (
     <span
       className={clsx(s.avatar, s[display], s[align])}
