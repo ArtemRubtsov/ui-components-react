@@ -18,7 +18,7 @@ type CustomSize = {
 
 export type AvatarProps = {
   align?: 'align-baseline' | 'align-center' | 'align-end' | 'align-start' | 'align-stretch'
-  alt?: string
+  alt: string
   className?: string
   display?: 'block' | 'flex' | 'inline' | 'inline-block'
   justify?: 'justify-center' | 'justify-end' | 'justify-start' | 'space-around' | 'space-between'
