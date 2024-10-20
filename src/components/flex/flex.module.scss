@@ -34,7 +34,7 @@
 .row-revers{
     flex-direction: row-reverse;
 }
-.between{
+.space-between{
     justify-content: space-between;
 }
 .center{
@@ -92,53 +92,53 @@
     gap: 4px;
 }
 .gx-xs{
-    gap: 8px;
+    row-gap: 8px;
 }
 .gx-s{
-    gap: 12px;
+    row-gap: 12px;
 }
 .gx-m{
-    gap: 16px;
+    row-gap: 16px;
 }
 .gx-l{
-    gap: 24px;
+    row-gap: 24px;
 }
 .gx-xl{
-    gap: 32px;
+    row-gap: 32px;
 }
 .gx-xxl{
-    gap: 40px;
+    row-gap: 40px;
 }
 .gx-xxxl{
-    gap: 48px;
+    row-gap: 48px;
 }
 .gx-x-xl{
-    gap: 64px;
+    row-gap: 64px;
 }
 .gy-xxs{
-    gap: 4px;
+    column-gap: 4px;
 }
 .gy-xs{
-    gap: 8px;
+    column-gap: 8px;
 }
 .gy-s{
-    gap: 12px;
+    column-gap: 12px;
 }
 .gy-m{
-    gap: 16px;
+    column-gap: 16px;
 }
 .gy-l{
-    gap: 24px;
+    column-gap: 24px;
 }
 .gy-xl{
-    gap: 32px;
+    column-gap: 32px;
 }
 .gy-xxl{
-    gap: 40px;
+    column-gap: 40px;
 }
 .gy-xxxl{
-    gap: 48px;
+    column-gap: 48px;
 }
 .gy-x-xl{
-    gap: 64px;
+    column-gap: 64px;
 }
