@@ -54,8 +54,14 @@
     text-wrap:  balance;
 }
 .nowrap{
-    white-space: nowrap;
+    text-wrap: nowrap;
 }
 .pretty{
-    white-space: pre-wrap;
+    text-wrap: pretty;
+}
+.stable{
+    text-wrap: stable;
+}
+.wrap{
+    text-wrap: wrap;
 }
