@@ -1,7 +1,7 @@
 {
   "name": "@rubtsov/ui-components-react",
   "private": false,
-  "version": "0.0.22",
+  "version": "0.0.28",
   "type": "module",
   "main": "dist/index.js",
   "module": "dist/index.js",
@@ -17,7 +17,8 @@
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "lint:fix": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0 --fix",
     "preview": "vite preview",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "deploy-storybook": "gh-pages -d storybook-static"
   },
   "dependencies": {
     "@radix-ui/react-slider": "^1.1.2",
@@ -42,8 +43,10 @@
     "@types/react-dom": "^18.2.7",
     "@vitejs/plugin-react": "^4.0.3",
     "eslint-plugin-storybook": "^0.6.15",
+    "gh-pages": "^6.1.1",
     "sass": "^1.69.5",
     "storybook": "7.5.3",
+    "storybook-deployer": "^2.8.12",
     "stylelint": "^15.11.0",
     "typescript": "^5.2.2",
     "vite": "^4.5.0"

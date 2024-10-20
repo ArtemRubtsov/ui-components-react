@@ -15,10 +15,16 @@ const config: StorybookConfig = {
   docs: {
     autodocs: true,
   },
-  viteFinal: config => {
-    config.build = config.build || {}
-    config.build.sourcemap = false
-    return config
+  viteFinal: (config) => {
+    config.build = config.build || {};
+    config.build.sourcemap = false;
+    config.base = '/ui-components-react/'; 
+    config.publicDir = '../public';
+    return config;
+  },
+  typescript: {
+    check: true, 
+    reactDocgen: 'react-docgen-typescript', 
   },
 }
 export default config

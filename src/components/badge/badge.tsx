@@ -1,7 +1,5 @@
 import { CSSProperties, ElementType } from 'react'
 
-import clsx from 'clsx'
-
 import s from './badge.module.scss'
 
 export const BadgeVariant = [
@@ -29,6 +27,7 @@ type Props<T extends ElementType = 'span'> = {
   variant?: VariantBadge
 }
 
+
 export const Badge = <T extends ElementType = 'span'>(props: Props<T>) => {
   const {
     align = 'align-start',
@@ -41,6 +40,7 @@ export const Badge = <T extends ElementType = 'span'>(props: Props<T>) => {
     variant = 'check',
     ...rest
   } = props
+
 
   return (
     <Component
