@@ -6,6 +6,8 @@
   box-sizing: border-box;
   padding: 0.5rem 1rem;
 
+  text-align: center;
+
   border-radius: 0.25rem;
 
   &:focus-visible {
@@ -18,27 +20,80 @@
   width: 100%;
 }
 
+.default{
+  color: #00a2c7;
+  background-color: #b8e9f4;
+
+  &:hover{
+    background-color: #ceeaf0;
+
+    &:active{
+      color: #008eae;
+      background-color: #e6eced;
+    }
+  }
+}
+
 .primary {
-  color: white;
-  background-color: blue;
+  color: #4169E1;
+  background-color: #94a8e1;
+
+  &:hover{
+    color: #4169E1;
+    background-color: #a1b3e2;
+  }
+
+  &:active{
+    color: #94a8e1;
+    background-color: #4169E1;
+  }
 }
 
 .secondary {
-  color: black;
-  background-color: lightblue;
-}
+  color: #FF8C00;
+  background-color: #fcefde;
 
-.tertiary {
-  color: blue;
-  border: 1px solid blue;
+  &:hover{
+    color: #FF8C00;
+    background-color: #f7e9da;
+
+    &:active{
+      color: #fcefde;
+      background-color: #FF8C00;
+    }
+  }
 }
 
 .link {
-  color: blue;
+  color: #00008B;
   text-decoration: underline;
+  border: 1px solid  #00008B;
+
+  &:hover{
+    border: none;
+
+    &:active{
+      color: #0202c3;
+      text-decoration: none;
+    }
+  }
 }
 
-.icon {
-  width: 1.5rem;
-  height: 1.5rem;
+.link2{
+  color: #00008B;
+  border-bottom: 1px solid #00008B;
+  transition: border-radius 1s ease;
+  
+  &:hover{
+    border-bottom-right-radius: 30px;
+
+    &:active{
+      color: #0202c3;
+      background-color: #e6e6fb;
+    }
+  }
+}
+
+.circle{
+  border-radius: 30px;
 }
