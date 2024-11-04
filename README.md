@@ -1,4 +1,4 @@
-# UI Components React Library
+# UI Components React KIT
 
 A collection of customizable and reusable UI components built with React, designed to accelerate your development process.
 
