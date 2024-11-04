@@ -24,15 +24,12 @@ importers:
         specifier: ^6.1.1
         version: 6.1.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
     devDependencies:
-      '@it-incubator/eslint-config':
-        specifier: ^1.0.1
-        version: 1.0.1(@typescript-eslint/eslint-plugin@6.11.0(@typescript-eslint/parser@6.11.0(eslint@8.53.0)(typescript@5.2.2))(eslint@8.53.0)(typescript@5.2.2))(@typescript-eslint/parser@6.11.0(eslint@8.53.0)(typescript@5.2.2))(eslint-config-prettier@9.0.0(eslint@8.53.0))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@6.11.0(eslint@8.53.0)(typescript@5.2.2))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.0)(eslint@8.53.0))(eslint-plugin-import@2.29.0(@typescript-eslint/parser@6.11.0(eslint@8.53.0)(typescript@5.2.2))(eslint-import-resolver-typescript@3.6.1)(eslint@8.53.0))(eslint-plugin-perfectionist@2.3.0(eslint@8.53.0)(typescript@5.2.2))(eslint-plugin-prettier@5.0.1(eslint-config-prettier@9.0.0(eslint@8.53.0))(eslint@8.53.0)(prettier@3.1.0))(eslint-plugin-react-hooks@4.6.0(eslint@8.53.0))(eslint-plugin-react@7.33.2(eslint@8.53.0))(eslint@8.53.0)
-      '@it-incubator/prettier-config':
-        specifier: ^0.1.2
-        version: 0.1.2
-      '@it-incubator/stylelint-config':
-        specifier: ^0.1.5
-        version: 0.1.5(postcss@8.4.31)(typescript@5.2.2)
+      '@rubtsov/eslint-config':
+        specifier: ^1.0.2
+        version: 1.0.2(@typescript-eslint/eslint-plugin@6.11.0(@typescript-eslint/parser@6.11.0(eslint@8.53.0)(typescript@5.2.2))(eslint@8.53.0)(typescript@5.2.2))(@typescript-eslint/parser@6.11.0(eslint@8.53.0)(typescript@5.2.2))(eslint-config-prettier@9.0.0(eslint@8.53.0))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@6.11.0(eslint@8.53.0)(typescript@5.2.2))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.0)(eslint@8.53.0))(eslint-plugin-import@2.29.0(@typescript-eslint/parser@6.11.0(eslint@8.53.0)(typescript@5.2.2))(eslint-import-resolver-typescript@3.6.1)(eslint@8.53.0))(eslint-plugin-perfectionist@2.3.0(eslint@8.53.0)(typescript@5.2.2))(eslint-plugin-prettier@5.0.1(eslint-config-prettier@9.0.0(eslint@8.53.0))(eslint@8.53.0)(prettier@3.1.0))(eslint-plugin-react-hooks@4.6.0(eslint@8.53.0))(eslint-plugin-react@7.33.2(eslint@8.53.0))(eslint@8.53.0)
+      '@rubtsov/prettier-config':
+        specifier: ^1.0.0
+        version: 1.0.0
       '@storybook/addon-essentials':
         specifier: 7.5.3
         version: 7.5.3(@types/react-dom@18.2.15)(@types/react@18.2.37)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -997,27 +994,6 @@ packages:
     resolution: {integrity: sha512-ZXRY4jNvVgSVQ8DL3LTcakaAtXwTVUxE81hslsyD2AtoXW/wVob10HkOJ1X/pAlcI7D+2YoZKg5do8G/w6RYgA==}
     engines: {node: '>=8'}
 
-  '@it-incubator/eslint-config@1.0.1':
-    resolution: {integrity: sha512-Dc7NgoSWZhtKrsoBvePdwl12BxBUhXb3ha1PxkJUN4dAiobiP85HZ2JhBoILVZIEdlF5DtPsE7SFmnfXPwgYqg==}
-    peerDependencies:
-      '@typescript-eslint/eslint-plugin': ^6.7.5
-      '@typescript-eslint/parser': ^6.7.5
-      eslint: ^8.51.0
-      eslint-config-prettier: ^9.0.0
-      eslint-import-resolver-node: ^0.3.9
-      eslint-import-resolver-typescript: ^3.6.1
-      eslint-plugin-import: ^2.28.1
-      eslint-plugin-perfectionist: ^2.1.0
-      eslint-plugin-prettier: ^5.0.0
-      eslint-plugin-react: ^7.33.2
-      eslint-plugin-react-hooks: ^4.6.0
-
-  '@it-incubator/prettier-config@0.1.2':
-    resolution: {integrity: sha512-Yxy2vZHhmfEPEU4xf/JltSuQQ5GTModi+oqsiZdV5MtWbLbfSpXpv9a3rpUziEULTPtrv7MdM0mdOx9YDCgSjA==}
-
-  '@it-incubator/stylelint-config@0.1.5':
-    resolution: {integrity: sha512-Jztg1mQj2e+ZoQ743p/iYx+C90hda9h5ctYL3tZkA4TSIoThedm28WAdif4EpIKXuCqJNXWlwJvl5YioducTig==}
-
   '@jest/schemas@29.6.3':
     resolution: {integrity: sha512-mo5j5X+jIZmJQveBKeS/clAueipV7KgiX1vMgCxam1RNYiqE1w62n0/tJJnHtjW8ZHcQco5gY85jA3mi0L+nSA==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
@@ -1421,6 +1397,24 @@ packages:
     peerDependenciesMeta:
       rollup:
         optional: true
+
+  '@rubtsov/eslint-config@1.0.2':
+    resolution: {integrity: sha512-kVP4onv6oP4FFz0RcRCx36Dt8ELTKxScTS8QyLY/sQrfnQSguAq9gfHoqqwbEyS0v+iUpg1272c0ByOJm7NFxQ==}
+    peerDependencies:
+      '@typescript-eslint/eslint-plugin': ^6.7.5
+      '@typescript-eslint/parser': ^6.7.5
+      eslint: ^8.51.0
+      eslint-config-prettier: ^9.0.0
+      eslint-import-resolver-node: ^0.3.9
+      eslint-import-resolver-typescript: ^3.6.1
+      eslint-plugin-import: ^2.28.1
+      eslint-plugin-perfectionist: ^2.1.0
+      eslint-plugin-prettier: ^5.0.0
+      eslint-plugin-react: ^7.33.2
+      eslint-plugin-react-hooks: ^4.6.0
+
+  '@rubtsov/prettier-config@1.0.0':
+    resolution: {integrity: sha512-/9VIGRhGBxu0MhI1NVAFxDowpoYqcG3asKhFQvzSQYZ2D4BtOmtDZb14DiWxQ5crp8xYlDCoSwOZUZkieKeHAw==}
 
   '@sinclair/typebox@0.27.8':
     resolution: {integrity: sha512-+Fj43pSMwJs4KRrH/938Uf+uAELIgVBmQzg/q1YG10djyfA3TnrU8N8XzqCh/okZdszqBQTZf96idMfE5lnwTA==}
@@ -3529,9 +3523,6 @@ packages:
     resolution: {integrity: sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==}
     engines: {node: '>=6'}
 
-  known-css-properties@0.27.0:
-    resolution: {integrity: sha512-uMCj6+hZYDoffuvAJjFAPz56E9uoowFHmTkqRtRq5WyC5Q6Cu/fTZKNQpX/RbzChBYLLl3lo8CjFZBAZXq9qFg==}
-
   known-css-properties@0.29.0:
     resolution: {integrity: sha512-Ne7wqW7/9Cz54PDt4I3tcV+hAyat8ypyOGzYRJQfdxnnjeWsTxt1cy8pjvvKeI5kfXuyvULyeeAvwvvtAX3ayQ==}
 
@@ -4036,9 +4027,6 @@ packages:
     resolution: {integrity: sha512-Sz2Lkdxz6F2Pgnpi9U5Ng/WdWAUZxmHrNPoVlm3aAemxoy2Qy7LGjQg4uf8qKelDAUW94F4np3iH2YPf2qefcQ==}
     engines: {node: '>=10'}
 
-  postcss-media-query-parser@0.2.3:
-    resolution: {integrity: sha512-3sOlxmbKcSHMjlUXQZKQ06jOswE7oVkXPxmZdoB1r5l0q6gTFTQSHxNxOrCccElbW7dxNytifNEo8qidX2Vsig==}
-
   postcss-resolve-nested-selector@0.1.1:
     resolution: {integrity: sha512-HvExULSwLqHLgUy1rl3ANIqCsvMS0WHss2UOsXhXnQaZ9VCc2oBvIpXrl00IUFT5ZDITME0o6oiXeiHr2SAIfw==}
 
@@ -4048,20 +4036,9 @@ packages:
     peerDependencies:
       postcss: ^8.3.3
 
-  postcss-scss@4.0.9:
-    resolution: {integrity: sha512-AjKOeiwAitL/MXxQW2DliT28EKukvvbEWx3LBmJIRN8KfBGZbRTxNYW0kSqi1COiTZ57nZ9NW06S6ux//N1c9A==}
-    engines: {node: '>=12.0'}
-    peerDependencies:
-      postcss: ^8.4.29
-
   postcss-selector-parser@6.0.13:
     resolution: {integrity: sha512-EaV1Gl4mUEV4ddhDnv/xtj7sxwrwxdetHdWUGnT4VJQf+4d05v6lHYZr8N573k5Z0BViss7BDhfWtKS3+sfAqQ==}
     engines: {node: '>=4'}
-
-  postcss-sorting@8.0.2:
-    resolution: {integrity: sha512-M9dkSrmU00t/jK7rF6BZSZauA5MAaBW4i5EnJXspMwt4iqTh/L9j6fgMnbElEOfyRyfLfVbIHj/R52zHzAPe1Q==}
-    peerDependencies:
-      postcss: ^8.4.20
 
   postcss-value-parser@4.2.0:
     resolution: {integrity: sha512-1NNCs6uurfkVbeXG4S8JFT9t19m45ICnif8zWLd5oPSZ50QnwMfK+H3jv408d4jw/7Bttv5axS5IiHoLaVNHeQ==}
@@ -4617,54 +4594,6 @@ packages:
     peerDependencies:
       react: '>= 16.8.0'
       react-dom: '>= 16.8.0'
-
-  stylelint-config-clean-order@5.0.1:
-    resolution: {integrity: sha512-zKLXjTgrkZqiml0VXv7Syl11XLpzRErW+1/qSEjIQ+aHAFjGuRq6Uwal9OzxtDHvpoIhlc4wCYjougWDuLN5aA==}
-    peerDependencies:
-      stylelint: '>=14'
-
-  stylelint-config-recommended-scss@12.0.0:
-    resolution: {integrity: sha512-5Bb2mlGy6WLa30oNeKpZvavv2lowJUsUJO25+OA68GFTemlwd1zbFsL7q0bReKipOSU3sG47hKneZ6Nd+ctrFA==}
-    peerDependencies:
-      postcss: ^8.3.3
-      stylelint: ^15.5.0
-    peerDependenciesMeta:
-      postcss:
-        optional: true
-
-  stylelint-config-recommended@12.0.0:
-    resolution: {integrity: sha512-x6x8QNARrGO2sG6iURkzqL+Dp+4bJorPMMRNPScdvaUK8PsynriOcMW7AFDKqkWAS5wbue/u8fUT/4ynzcmqdQ==}
-    peerDependencies:
-      stylelint: ^15.5.0
-
-  stylelint-config-standard-scss@10.0.0:
-    resolution: {integrity: sha512-bChBEo1p3xUVWh/wenJI+josoMk21f2yuLDGzGjmKYcALfl2u3DFltY+n4UHswYiXghqXaA8mRh+bFy/q1hQlg==}
-    peerDependencies:
-      postcss: ^8.3.3
-      stylelint: ^15.5.0
-    peerDependenciesMeta:
-      postcss:
-        optional: true
-
-  stylelint-config-standard@33.0.0:
-    resolution: {integrity: sha512-eyxnLWoXImUn77+ODIuW9qXBDNM+ALN68L3wT1lN2oNspZ7D9NVGlNHb2QCUn4xDug6VZLsh0tF8NyoYzkgTzg==}
-    peerDependencies:
-      stylelint: ^15.5.0
-
-  stylelint-order@6.0.3:
-    resolution: {integrity: sha512-1j1lOb4EU/6w49qZeT2SQVJXm0Ht+Qnq9GMfUa3pMwoyojIWfuA+JUDmoR97Bht1RLn4ei0xtLGy87M7d29B1w==}
-    peerDependencies:
-      stylelint: ^14.0.0 || ^15.0.0
-
-  stylelint-scss@5.3.1:
-    resolution: {integrity: sha512-5I9ZDIm77BZrjOccma5WyW2nJEKjXDd4Ca8Kk+oBapSO4pewSlno3n+OyimcyVJJujQZkBN2D+xuMkIamSc6hA==}
-    peerDependencies:
-      stylelint: ^14.5.1 || ^15.0.0
-
-  stylelint@15.10.1:
-    resolution: {integrity: sha512-CYkzYrCFfA/gnOR+u9kJ1PpzwG10WLVnoxHDuBA/JiwGqdM9+yx9+ou6SE/y9YHtfv1mcLo06fdadHTOx4gBZQ==}
-    engines: {node: ^14.13.1 || >=16.0.0}
-    hasBin: true
 
   stylelint@15.11.0:
     resolution: {integrity: sha512-78O4c6IswZ9TzpcIiQJIN49K3qNoXTM8zEJzhaTE/xRTCZswaovSEVIa/uwbOltZrk16X4jAxjaOhzz/hTm1Kw==}
@@ -6107,34 +6036,6 @@ snapshots:
 
   '@istanbuljs/schema@0.1.3': {}
 
-  '@it-incubator/eslint-config@1.0.1(@typescript-eslint/eslint-plugin@6.11.0(@typescript-eslint/parser@6.11.0(eslint@8.53.0)(typescript@5.2.2))(eslint@8.53.0)(typescript@5.2.2))(@typescript-eslint/parser@6.11.0(eslint@8.53.0)(typescript@5.2.2))(eslint-config-prettier@9.0.0(eslint@8.53.0))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@6.11.0(eslint@8.53.0)(typescript@5.2.2))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.0)(eslint@8.53.0))(eslint-plugin-import@2.29.0(@typescript-eslint/parser@6.11.0(eslint@8.53.0)(typescript@5.2.2))(eslint-import-resolver-typescript@3.6.1)(eslint@8.53.0))(eslint-plugin-perfectionist@2.3.0(eslint@8.53.0)(typescript@5.2.2))(eslint-plugin-prettier@5.0.1(eslint-config-prettier@9.0.0(eslint@8.53.0))(eslint@8.53.0)(prettier@3.1.0))(eslint-plugin-react-hooks@4.6.0(eslint@8.53.0))(eslint-plugin-react@7.33.2(eslint@8.53.0))(eslint@8.53.0)':
-    dependencies:
-      '@typescript-eslint/eslint-plugin': 6.11.0(@typescript-eslint/parser@6.11.0(eslint@8.53.0)(typescript@5.2.2))(eslint@8.53.0)(typescript@5.2.2)
-      '@typescript-eslint/parser': 6.11.0(eslint@8.53.0)(typescript@5.2.2)
-      eslint: 8.53.0
-      eslint-config-prettier: 9.0.0(eslint@8.53.0)
-      eslint-import-resolver-node: 0.3.9
-      eslint-import-resolver-typescript: 3.6.1(@typescript-eslint/parser@6.11.0(eslint@8.53.0)(typescript@5.2.2))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.0)(eslint@8.53.0)
-      eslint-plugin-import: 2.29.0(@typescript-eslint/parser@6.11.0(eslint@8.53.0)(typescript@5.2.2))(eslint-import-resolver-typescript@3.6.1)(eslint@8.53.0)
-      eslint-plugin-perfectionist: 2.3.0(eslint@8.53.0)(typescript@5.2.2)
-      eslint-plugin-prettier: 5.0.1(eslint-config-prettier@9.0.0(eslint@8.53.0))(eslint@8.53.0)(prettier@3.1.0)
-      eslint-plugin-react: 7.33.2(eslint@8.53.0)
-      eslint-plugin-react-hooks: 4.6.0(eslint@8.53.0)
-
-  '@it-incubator/prettier-config@0.1.2':
-    dependencies:
-      prettier: 3.0.0
-
-  '@it-incubator/stylelint-config@0.1.5(postcss@8.4.31)(typescript@5.2.2)':
-    dependencies:
-      stylelint: 15.10.1(typescript@5.2.2)
-      stylelint-config-clean-order: 5.0.1(stylelint@15.10.1(typescript@5.2.2))
-      stylelint-config-standard-scss: 10.0.0(postcss@8.4.31)(stylelint@15.10.1(typescript@5.2.2))
-    transitivePeerDependencies:
-      - postcss
-      - supports-color
-      - typescript
-
   '@jest/schemas@29.6.3':
     dependencies:
       '@sinclair/typebox': 0.27.8
@@ -6577,6 +6478,24 @@ snapshots:
       picomatch: 2.3.1
     optionalDependencies:
       rollup: 3.29.4
+
+  '@rubtsov/eslint-config@1.0.2(@typescript-eslint/eslint-plugin@6.11.0(@typescript-eslint/parser@6.11.0(eslint@8.53.0)(typescript@5.2.2))(eslint@8.53.0)(typescript@5.2.2))(@typescript-eslint/parser@6.11.0(eslint@8.53.0)(typescript@5.2.2))(eslint-config-prettier@9.0.0(eslint@8.53.0))(eslint-import-resolver-node@0.3.9)(eslint-import-resolver-typescript@3.6.1(@typescript-eslint/parser@6.11.0(eslint@8.53.0)(typescript@5.2.2))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.0)(eslint@8.53.0))(eslint-plugin-import@2.29.0(@typescript-eslint/parser@6.11.0(eslint@8.53.0)(typescript@5.2.2))(eslint-import-resolver-typescript@3.6.1)(eslint@8.53.0))(eslint-plugin-perfectionist@2.3.0(eslint@8.53.0)(typescript@5.2.2))(eslint-plugin-prettier@5.0.1(eslint-config-prettier@9.0.0(eslint@8.53.0))(eslint@8.53.0)(prettier@3.1.0))(eslint-plugin-react-hooks@4.6.0(eslint@8.53.0))(eslint-plugin-react@7.33.2(eslint@8.53.0))(eslint@8.53.0)':
+    dependencies:
+      '@typescript-eslint/eslint-plugin': 6.11.0(@typescript-eslint/parser@6.11.0(eslint@8.53.0)(typescript@5.2.2))(eslint@8.53.0)(typescript@5.2.2)
+      '@typescript-eslint/parser': 6.11.0(eslint@8.53.0)(typescript@5.2.2)
+      eslint: 8.53.0
+      eslint-config-prettier: 9.0.0(eslint@8.53.0)
+      eslint-import-resolver-node: 0.3.9
+      eslint-import-resolver-typescript: 3.6.1(@typescript-eslint/parser@6.11.0(eslint@8.53.0)(typescript@5.2.2))(eslint-import-resolver-node@0.3.9)(eslint-plugin-import@2.29.0)(eslint@8.53.0)
+      eslint-plugin-import: 2.29.0(@typescript-eslint/parser@6.11.0(eslint@8.53.0)(typescript@5.2.2))(eslint-import-resolver-typescript@3.6.1)(eslint@8.53.0)
+      eslint-plugin-perfectionist: 2.3.0(eslint@8.53.0)(typescript@5.2.2)
+      eslint-plugin-prettier: 5.0.1(eslint-config-prettier@9.0.0(eslint@8.53.0))(eslint@8.53.0)(prettier@3.1.0)
+      eslint-plugin-react: 7.33.2(eslint@8.53.0)
+      eslint-plugin-react-hooks: 4.6.0(eslint@8.53.0)
+
+  '@rubtsov/prettier-config@1.0.0':
+    dependencies:
+      prettier: 3.0.0
 
   '@sinclair/typebox@0.27.8': {}
 
@@ -9430,8 +9349,6 @@ snapshots:
 
   kleur@3.0.3: {}
 
-  known-css-properties@0.27.0: {}
-
   known-css-properties@0.29.0: {}
 
   lazy-universal-dotenv@4.0.0:
@@ -9900,15 +9817,9 @@ snapshots:
     dependencies:
       '@babel/runtime': 7.23.2
 
-  postcss-media-query-parser@0.2.3: {}
-
   postcss-resolve-nested-selector@0.1.1: {}
 
   postcss-safe-parser@6.0.0(postcss@8.4.31):
-    dependencies:
-      postcss: 8.4.31
-
-  postcss-scss@4.0.9(postcss@8.4.31):
     dependencies:
       postcss: 8.4.31
 
@@ -9916,10 +9827,6 @@ snapshots:
     dependencies:
       cssesc: 3.0.0
       util-deprecate: 1.0.2
-
-  postcss-sorting@8.0.2(postcss@8.4.31):
-    dependencies:
-      postcss: 8.4.31
 
   postcss-value-parser@4.2.0: {}
 
@@ -10562,98 +10469,6 @@ snapshots:
       shallowequal: 1.1.0
       stylis: 4.3.0
       tslib: 2.6.2
-
-  stylelint-config-clean-order@5.0.1(stylelint@15.10.1(typescript@5.2.2)):
-    dependencies:
-      stylelint: 15.10.1(typescript@5.2.2)
-      stylelint-order: 6.0.3(stylelint@15.10.1(typescript@5.2.2))
-
-  stylelint-config-recommended-scss@12.0.0(postcss@8.4.31)(stylelint@15.10.1(typescript@5.2.2)):
-    dependencies:
-      postcss-scss: 4.0.9(postcss@8.4.31)
-      stylelint: 15.10.1(typescript@5.2.2)
-      stylelint-config-recommended: 12.0.0(stylelint@15.10.1(typescript@5.2.2))
-      stylelint-scss: 5.3.1(stylelint@15.10.1(typescript@5.2.2))
-    optionalDependencies:
-      postcss: 8.4.31
-
-  stylelint-config-recommended@12.0.0(stylelint@15.10.1(typescript@5.2.2)):
-    dependencies:
-      stylelint: 15.10.1(typescript@5.2.2)
-
-  stylelint-config-standard-scss@10.0.0(postcss@8.4.31)(stylelint@15.10.1(typescript@5.2.2)):
-    dependencies:
-      stylelint: 15.10.1(typescript@5.2.2)
-      stylelint-config-recommended-scss: 12.0.0(postcss@8.4.31)(stylelint@15.10.1(typescript@5.2.2))
-      stylelint-config-standard: 33.0.0(stylelint@15.10.1(typescript@5.2.2))
-    optionalDependencies:
-      postcss: 8.4.31
-
-  stylelint-config-standard@33.0.0(stylelint@15.10.1(typescript@5.2.2)):
-    dependencies:
-      stylelint: 15.10.1(typescript@5.2.2)
-      stylelint-config-recommended: 12.0.0(stylelint@15.10.1(typescript@5.2.2))
-
-  stylelint-order@6.0.3(stylelint@15.10.1(typescript@5.2.2)):
-    dependencies:
-      postcss: 8.4.31
-      postcss-sorting: 8.0.2(postcss@8.4.31)
-      stylelint: 15.10.1(typescript@5.2.2)
-
-  stylelint-scss@5.3.1(stylelint@15.10.1(typescript@5.2.2)):
-    dependencies:
-      known-css-properties: 0.29.0
-      postcss-media-query-parser: 0.2.3
-      postcss-resolve-nested-selector: 0.1.1
-      postcss-selector-parser: 6.0.13
-      postcss-value-parser: 4.2.0
-      stylelint: 15.10.1(typescript@5.2.2)
-
-  stylelint@15.10.1(typescript@5.2.2):
-    dependencies:
-      '@csstools/css-parser-algorithms': 2.3.2(@csstools/css-tokenizer@2.2.1)
-      '@csstools/css-tokenizer': 2.2.1
-      '@csstools/media-query-list-parser': 2.1.5(@csstools/css-parser-algorithms@2.3.2(@csstools/css-tokenizer@2.2.1))(@csstools/css-tokenizer@2.2.1)
-      '@csstools/selector-specificity': 3.0.0(postcss-selector-parser@6.0.13)
-      balanced-match: 2.0.0
-      colord: 2.9.3
-      cosmiconfig: 8.3.6(typescript@5.2.2)
-      css-functions-list: 3.2.1
-      css-tree: 2.3.1
-      debug: 4.3.4
-      fast-glob: 3.3.2
-      fastest-levenshtein: 1.0.16
-      file-entry-cache: 6.0.1
-      global-modules: 2.0.0
-      globby: 11.1.0
-      globjoin: 0.1.4
-      html-tags: 3.3.1
-      ignore: 5.2.4
-      import-lazy: 4.0.0
-      imurmurhash: 0.1.4
-      is-plain-object: 5.0.0
-      known-css-properties: 0.27.0
-      mathml-tag-names: 2.1.3
-      meow: 10.1.5
-      micromatch: 4.0.5
-      normalize-path: 3.0.0
-      picocolors: 1.0.0
-      postcss: 8.4.31
-      postcss-resolve-nested-selector: 0.1.1
-      postcss-safe-parser: 6.0.0(postcss@8.4.31)
-      postcss-selector-parser: 6.0.13
-      postcss-value-parser: 4.2.0
-      resolve-from: 5.0.0
-      string-width: 4.2.3
-      strip-ansi: 6.0.1
-      style-search: 0.1.0
-      supports-hyperlinks: 3.0.0
-      svg-tags: 1.0.0
-      table: 6.8.1
-      write-file-atomic: 5.0.1
-    transitivePeerDependencies:
-      - supports-color
-      - typescript
 
   stylelint@15.11.0(typescript@5.2.2):
     dependencies:
