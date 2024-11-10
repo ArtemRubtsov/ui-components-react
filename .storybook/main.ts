@@ -7,14 +7,14 @@ const config: StorybookConfig = {
     getAbsolutePath('@storybook/addon-links'),
     getAbsolutePath('@storybook/addon-interactions'),
     getAbsolutePath('@storybook/addon-essentials'),
+    '@chromatic-com/storybook',
+    '@chromatic-com/storybook'
   ],
   framework: {
     name: getAbsolutePath('@storybook/react-vite'),
     options: {},
   },
-  docs: {
-    autodocs: true,
-  },
+  docs: {},
   viteFinal: (config) => {
     config.build = config.build || {};
     config.build.sourcemap = false;
