@@ -1,0 +1,49 @@
+.wrapper {
+    position: relative;
+    display: inline-block;
+  
+    .date {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 200px;
+      font-size: 16px;
+    }
+  
+    .calendar {
+      position: absolute;
+      top: 40px;
+      left: 0;
+      background: #141726;
+      border: 1px solid #d9edfe25;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      padding: 10px;
+      z-index: 1000;
+  
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 5px;
+      text-align: center;
+  
+      button {
+        padding: 5px;
+        background: #3e63dd;
+        color: #91a7f2;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+  
+        &:hover {
+          background: #3f518a;
+        }
+  
+        &:active {
+          background: #ccc;
+        }
+      }
+    }
+  }
+  
