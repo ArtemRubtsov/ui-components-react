@@ -3,9 +3,7 @@ import type { Meta, StoryObj } from '@storybook/react'
 import DatePicker from './DatePicker'
 
 const meta = {
-  argTypes: {
-    onChange: { action: 'changed' },
-  },
+  argTypes: {},
   component: DatePicker,
   title: 'Components/DatePicker',
 } satisfies Meta<typeof DatePicker>
