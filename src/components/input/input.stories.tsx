@@ -35,6 +35,15 @@ const meta = {
 export default meta
 type Story = StoryObj<typeof meta>
 
+export const Default: Story = {
+  render: () => (
+    <div style={{ display: 'flex', gap: 16 }}>
+      <label htmlFor={'test'}>name </label>
+      <Input name={'test'} type={'text'} variant={'default'} />
+    </div>
+  ),
+}
+
 export const Primary: Story = {
   args: {
     disabled: false,

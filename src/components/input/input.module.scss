@@ -1,4 +1,25 @@
 .default{
-    border: 5px solid rgba(56, 174, 56, 0.267);
-    color: aqua;
+    position: relative;
+    font-family: inherit;
+    color: rgb(251, 242, 242);
+    background: transparent;
+    padding: 12px 20px;
+    margin: 8px 0;
+    transition: border-color 0.2s;
+    border: 0;
+    border-bottom: 2px solid #a2b1e2;
+    border-left: 2px solid #a2b1e2;
+    border-bottom-left-radius: 7px;
+    outline: none;
+    &:focus{
+        input[label]{
+            position: absolute;
+            top: 0;
+
+        }
+    }
+}
+
+.fullWidth{
+    width: 100%;
 }
