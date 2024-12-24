@@ -1,75 +1,111 @@
-import { useState } from 'react'
+import { ReactNode, useMemo, useState } from 'react'
+
+import clsx from 'clsx'
 
 import s from './datePicker.module.scss'
 
 import { Input } from '../input'
 
-type DatePickerProps = {}
+type DatePickerProps = {
+  className: string
+  isOpen: boolean
+  onDateChange: (date: string) => void
+  onTimeChange: (time: string) => void
+  renderDay: (day: number, handleClick: () => void) => ReactNode
+  renderTime: (time: string, handleClick: () => void) => ReactNode
+  selectTime: string
+  selectedDate: string
+  timeSlots: string[]
+}
 
-export default function DatePicker() {
-  const [selectedDate, setSelectedDate] = useState<null | string>(null)
-  const [isOpen, setIsOpen] = useState(false)
-  const [selectTime, setSelectTime] = useState<null | string>(null)
-
+export default function DatePicker({
+  className,
+  isOpen: propsIsOpen,
+  onDateChange,
+  onTimeChange,
+  renderDay,
+  renderTime,
+  selectTime,
+  selectedDate,
+  timeSlots,
+}: Partial<DatePickerProps>) {
+  const [internalSelectedDate, setInternalSelectedDate] = useState<null | string>(
+    selectedDate || null
+  )
+  const [internalSelectTime, setInternalSelectTime] = useState<null | string>(selectTime || null)
+  const [internalIsOpen, setInternalIsOpen] = useState<boolean>(propsIsOpen ?? false)
   const today = new Date()
   const currentYear = today.getFullYear()
   const currentMonth = today.getMonth()
 
-  const generateDays = (year: number, month: number) => {
-    const daysInMonth = new Date(year, month + 1, 0).getDate()
+  const daysInMonth = useMemo(
+    () =>
+      Array.from({ length: new Date(currentYear, currentMonth + 1, 0).getDate() }, (_, i) => i + 1),
+    [currentYear, currentMonth]
+  )
 
-    return Array.from({ length: daysInMonth }, (_, i) => i + 1)
-  }
-
-  const generateTimeSlots = () => {
-    const timeSlots = []
+  const defaultTimeSlots = useMemo(() => {
+    const slots = []
 
     for (let hour = 9; hour <= 19; hour++) {
-      timeSlots.push(`${String(hour).padStart(2, '0')}:00`)
-      timeSlots.push(`${String(hour).padStart(2, '0')}:30`)
+      slots.push(`${String(hour).padStart(2, '0')}:00`)
+      slots.push(`${String(hour).padStart(2, '0')}:30`)
     }
 
-    return timeSlots
-  }
+    return slots
+  }, [])
 
   const handleDateClick = (day: number) => {
     const formattedDate = `${currentYear}-${String(currentMonth + 1).padStart(2, '0')}-${String(
       day
     ).padStart(2, '0')}`
 
-    setSelectedDate(formattedDate)
-    setIsOpen(false)
-  }
-  const handleTimeClick = (time: string) => {
-    setSelectTime(time)
-    setIsOpen(false)
+    setInternalSelectedDate(formattedDate)
+    onDateChange?.(formattedDate)
+    setInternalIsOpen(true)
   }
 
+  const handleTimeClick = (time: string) => {
+    setInternalSelectTime(time)
+    onTimeChange?.(time)
+    setInternalIsOpen(false)
+  }
+
+  const timeSlotList = timeSlots || defaultTimeSlots
+
   return (
-    <div className={s.wrapper}>
+    <div className={clsx(s.wrapper, className)}>
       <Input
         className={s.date}
         id={'date'}
-        onClick={() => setIsOpen(true)}
+        onClick={() => setInternalIsOpen(true)}
         readOnly
         type={'text'}
-        value={`${selectedDate || ''} ${selectTime || ''}`.trim()}
+        value={`${internalSelectedDate || ''} ${internalSelectTime || ''}`.trim()}
       />
-      {isOpen && (
+      {(propsIsOpen ?? internalIsOpen) && (
         <div className={s.wrapCalendar}>
           <div className={s.calendar}>
-            {generateDays(currentYear, currentMonth).map(day => (
-              <button key={day} onClick={() => handleDateClick(day)} type={'button'}>
-                {day}
-              </button>
-            ))}
+            {daysInMonth.map(day =>
+              renderDay ? (
+                renderDay(day, () => handleDateClick(day))
+              ) : (
+                <button key={day} onClick={() => handleDateClick(day)} type={'button'}>
+                  {day}
+                </button>
+              )
+            )}
           </div>
           <div className={s.time}>
-            {generateTimeSlots().map(time => (
-              <button key={time} onClick={() => handleTimeClick(time)} type={'button'}>
-                {time}
-              </button>
-            ))}
+            {timeSlotList.map(time =>
+              renderTime ? (
+                renderTime(time, () => handleTimeClick(time))
+              ) : (
+                <button key={time} onClick={() => handleTimeClick(time)} type={'button'}>
+                  {time}
+                </button>
+              )
+            )}
           </div>
         </div>
       )}
