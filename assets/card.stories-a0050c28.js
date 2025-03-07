@@ -1,0 +1,5 @@
+import{j as e}from"./jsx-runtime-3dc6859f.js";import"./index-d4014758.js";const c="_card_sv0be_1",p="_customClass_sv0be_8",d="_primary_sv0be_13",i="_secondary_sv0be_18",m={card:c,customClass:p,primary:d,secondary:i},r=({className:a,customType:t,...o})=>{const n=`${m.card} ${a||""}`;return e.jsxs("div",{className:n,...o,children:[t==="string"&&e.jsx("p",{children:"This is a string type"}),t==="number"&&e.jsx("p",{children:"This is a number type"})]})};try{r.displayName="Card",r.__docgenInfo={description:"",displayName:"Card",props:{customType:{defaultValue:null,description:"",name:"customType",required:!0,type:{name:"enum",value:[{value:'"string"'},{value:'"number"'},{value:'"boolean"'}]}}}}}catch{}const _={argTypes:{customType:{control:{type:"radio"},options:["string","number","boolean"]}},component:r,tags:["autodocs"],title:"Components/Card"},s={args:{customType:"string"}};s.parameters={...s.parameters,docs:{...s.parameters?.docs,source:{originalSource:`{
+  args: {
+    customType: 'string'
+  }
+}`,...s.parameters?.docs?.source}}};const y=["Default"];export{s as Default,y as __namedExportsOrder,_ as default};
