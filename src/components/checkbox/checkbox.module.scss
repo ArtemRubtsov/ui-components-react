@@ -1,0 +1,29 @@
+.Root {
+	all: unset;
+	background-color: rgb(51, 207, 142);
+	width: 25px;
+	height: 25px;
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 2px 10px var(--black-a7);
+	&:hover {
+		background-color: rgb(151, 197, 178);
+	}
+
+	&:focus {
+		box-shadow: 0 0 0 2px rgb(19, 117, 75);
+	}
+}
+
+.Indicator {
+	color: rgb(251, 252, 251);
+}
+
+.Label {
+	color: rgb(36, 3, 3);
+	padding-left: 15px;
+	font-size: 15px;
+	line-height: 1;
+}
